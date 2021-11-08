@@ -6,9 +6,9 @@ function MatrixIndicators(value, position){
 const reloadMatrix = (rhs, internalResponse = []) => {
     if ( Array.isArray(rhs) ) rhs.forEach( rhs => reloadMatrix(rhs, internalResponse) )
     else {
-        internalResponse.push(rhs)
+        internalResponse.push(rhs);
     }
-    return internalResponse;
+    return internalResponse; // Kill current iteration keeping internalResponse
 }
 
 // Tests
