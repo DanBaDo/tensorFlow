@@ -13,4 +13,5 @@ const reloadMatrix = (rhs, internalResponse = []) => {
 
 // Tests
 const array = [[1,3,2],[12,1,3],[5,1,[1,2]],2];
-console.log(reloadMatrix(array));
+let output = JSON.stringify(reloadMatrix(array))
+console.log(output === "[1,3,2,12,1,3,5,1,1,2,2]");
